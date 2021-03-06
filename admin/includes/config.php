@@ -3,7 +3,7 @@
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','bikerental');
+define('DB_NAME','motobase');
 // Establish database connection.
 try
 {
