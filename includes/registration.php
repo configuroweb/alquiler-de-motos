@@ -16,11 +16,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-echo "<script>alert('Registro exitoso. Ya puedes acceder');</script>";
+echo "<script>alert('Registro exitoso. Ahora puedes iniciar sesión');</script>";
 }
 else 
 {
-echo "<script>alert('Algo salió mal. Reinténtalo');</script>";
+echo "<script>alert('Algo salió mal. Inténtalo de nuevo');</script>";
 }
 }
 
@@ -47,7 +47,7 @@ function valid()
 {
 if(document.signup.password.value!= document.signup.confirmpassword.value)
 {
-alert("Nueva contraseña y confirmar contraseña no coinciden");
+alert("¡La contraseña y el campo Confirmar contraseña no coinciden!");
 document.signup.confirmpassword.focus();
 return false;
 }
@@ -59,7 +59,7 @@ return true;
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title">Formulario de Registro</h3>
+        <h3 class="modal-title">Registro</h3>
       </div>
       <div class="modal-body">
         <div class="row">
@@ -70,24 +70,24 @@ return true;
                   <input type="text" class="form-control" name="fullname" placeholder="Nombre Completo" required="required">
                 </div>
                       <div class="form-group">
-                  <input type="text" class="form-control" name="mobileno" placeholder="Teléfono" maxlength="10" required="required">
+                  <input type="text" class="form-control" name="mobileno" placeholder="Número Móvil" maxlength="10" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="emailid" id="emailid" onBlur="checkAvailability()" placeholder="Correo" required="required">
+                  <input type="email" class="form-control" name="emailid" id="emailid" onBlur="checkAvailability()" placeholder="Correo Electrónico" required="required">
                    <span id="user-availability-status" style="font-size:12px;"></span> 
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" name="confirmpassword" placeholder="Confirma tu contraseña" required="required">
+                  <input type="password" class="form-control" name="confirmpassword" placeholder="Confirmar Contraseña" required="required">
                 </div>
                 <div class="form-group checkbox">
                   <input type="checkbox" id="terms_agree" required="required" checked="">
-                  <label for="terms_agree">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></label>
+                  <label for="terms_agree">Estoy de acuerdo con las <a href="page.php?type=terms">Condiciones y Restricciones</a></label>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Registrarse" name="signup" id="submit" class="btn btn-block">
+                  <input type="submit" value="Registro" name="signup" id="submit" class="btn btn-block">
                 </div>
               </form>
             </div>
@@ -96,7 +96,7 @@ return true;
         </div>
       </div>
       <div class="modal-footer text-center">
-        <p>¿Ya tienes una cuenta? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Accede aquí</a></p>
+        <p>¿Ya tienes una cuenta? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Ingresa aquí</a></p>
       </div>
     </div>
   </div>
