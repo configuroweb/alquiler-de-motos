@@ -17,11 +17,11 @@ https://configuroweb.com/WhatsappMessenger
 
 El demo de la aplicación se encuentra en el siguiente enlace:
 
-https://mauriciosevilla.com/alquilermotos/index.php
+https://demoscweb.com/alquilermotos/index.php
 
 El ambiente administrativo en la siguiente URL:
 
-https://mauriciosevilla.com/alquilermotos/admin/index.php
+https://demoscweb.com/alquilermotos/admin/index.php
 
 las credenciales de usuario administrativo son las siguientes:
 
